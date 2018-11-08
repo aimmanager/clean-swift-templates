@@ -9,28 +9,54 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 import UIKit
+import RxSwift
 
 class ___VARIABLE_repositoryName___Repository: ___VARIABLE_entityPluralName___RepositoryProtocol {
     
     // MARK: CRUD operations
     func get___VARIABLE_entityPluralName___() -> ___VARIABLE_entityPluralName___RepositoryGet___VARIABLE_entityPluralName___Response {
-        return <#code#>
+        return Observable.create({ (observer) -> Disposable in
+            observer.onNext(<#code#>)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        })
     }
     
     func get___VARIABLE_entityName___(id: Int) -> ___VARIABLE_entityPluralName___RepositoryGet___VARIABLE_entityName___Response {
-        return <#code#>
+        return Observable.create({ (observer) -> Disposable in
+            observer.onNext(<#code#>)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        })
     }
     
     func create___VARIABLE_entityName___(___VARIABLE_entityLowercaseName___: ___VARIABLE_entityName___) -> ___VARIABLE_entityPluralName___RepositoryCreate___VARIABLE_entityName___ {
-        return <#code#>
+        return Observable.create({ (observer) -> Disposable in
+            observer.onNext(<#code#>)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        })
     }
     
     func update___VARIABLE_entityName___(___VARIABLE_entityLowercaseName___: ___VARIABLE_entityName___) -> ___VARIABLE_entityPluralName___RepositoryUpdate___VARIABLE_entityName___ {
-        return <#code#>
+        return Observable.create({ (observer) -> Disposable in
+            observer.onNext(<#code#>)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        })
     }
     
     func delete___VARIABLE_entityName___(id: Int) -> ___VARIABLE_entityPluralName___RepositoryDelete___VARIABLE_entityName___ {
-        return <#code#>
+        return Observable.create({ (observer) -> Disposable in
+            observer.onNext(<#code#>)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        })
     }
 
 }
