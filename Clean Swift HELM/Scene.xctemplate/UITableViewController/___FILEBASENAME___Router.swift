@@ -33,6 +33,8 @@ class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterInput {
         self.dataSource = dataSource
         self.dataDestination = dataDestination
     }
+
+    // MARK: Router
     
     // MARK: Navigation
     
