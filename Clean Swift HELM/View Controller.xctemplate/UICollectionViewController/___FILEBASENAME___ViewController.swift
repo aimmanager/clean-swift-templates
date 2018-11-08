@@ -27,6 +27,20 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        commonInit()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        commonInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    func commonInit() {
         ___VARIABLE_sceneName___Configurator.sharedInstance.configure(viewController: self)
     }
     
