@@ -103,6 +103,7 @@
 			<key>Type</key>
 			<string>static</string>
     	</dict>
+    	
     	<dict>
 			<key>Default</key>
 			<string>both</string>
