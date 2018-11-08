@@ -12,11 +12,11 @@
   <array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the scene to create</string>
+			<string>The name of the worker to create</string>
 			<key>Identifier</key>
-			<string>sceneName</string>
+			<string>workerName</string>
 			<key>Name</key>
-			<string>New Scene Name:</string>
+			<string>New Worker Name:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -24,28 +24,70 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
-    <dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the entity to create the worker</string>
+			<key>Identifier</key>
+			<string>entityName</string>
+			<key>Name</key>
+			<string>Entity Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The plural name of the entity to create the worker</string>
+			<key>Identifier</key>
+			<string>entityPluralName</string>
+			<key>Name</key>
+			<string>Plural Name:</string>
+			<key>Required</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The lowercase name of the entity to create the store</string>
+			<key>Identifier</key>
+			<string>entityLowercaseName</string>
+			<key>Name</key>
+			<string>Lowercase Name:</string>
+			<key>Required</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+    	<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___</string>
+			<string>___VARIABLE_workerName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
-    <dict>
+    	</dict>
+    	<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Worker</string>
+			<string>___VARIABLE_workerName:identifier___Worker</string>
 			<key>Description</key>
-			<string>The worker name</string>
+			<string>The store name</string>
 			<key>Identifier</key>
-			<string>workerName</string>
+			<string>fileName</string>
 			<key>Name</key>
 			<string>Worker Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>static</string>
-    </dict>
+		</dict>
   </array>
   <key>Platforms</key>
   <array>
