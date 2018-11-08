@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>MyScene</string>
+	<key>Description</key>
+	<string>This generates a new repository files. It consists of the cloud and mock.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the repository to create</string>
+			<key>Identifier</key>
+			<string>repositoryName</string>
+			<key>Name</key>
+			<string>New Repository Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the entity to create the repository</string>
+			<key>Identifier</key>
+			<string>entityName</string>
+			<key>Name</key>
+			<string>Entity Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The plural name of the entity to create the repository</string>
+			<key>Identifier</key>
+			<string>entityPluralName</string>
+			<key>Name</key>
+			<string>Plural Name:</string>
+			<key>Required</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The lowercase name of the entity to create the repository</string>
+			<key>Identifier</key>
+			<string>entityLowercaseName</string>
+			<key>Name</key>
+			<string>Lowercase Name:</string>
+			<key>Required</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+
+    	<dict>
+			<key>Default</key>
+			<string>___VARIABLE_repositoryName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+    	</dict>
+    	<dict>
+			<key>Default</key>
+			<string>___VARIABLE_repositoryName:identifier___Repository</string>
+			<key>Description</key>
+			<string>The worker name</string>
+			<key>Identifier</key>
+			<string>workerName</string>
+			<key>Name</key>
+			<string>Worker Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+    	</dict>
+    	<dict>
+			<key>Default</key>
+			<string>Mock___VARIABLE_repositoryName:identifier___Repository</string>
+			<key>Description</key>
+			<string>The mock worker name</string>
+			<key>Identifier</key>
+			<string>mockWorkerName</string>
+			<key>Name</key>
+			<string>Mock Worker Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+    	</dict>
+    	<dict>
+			<key>Default</key>
+			<string>both</string>
+			<key>Description</key>
+			<string>What kind for the new repository</string>
+			<key>Identifier</key>
+			<string>viewControllerSubclass</string>
+			<key>Name</key>
+			<string>Kind of:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Values</key>
+			<array>
+				<string>cloud</string>
+				<string>mock</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>Summary</key>
+	<string>This generates a new scene using Uncle Bob&apos;s clean architecture.</string>
+</dict>
+</plist>
